@@ -267,6 +267,21 @@ section.success {
     margin: 0 0 30px;
   }
 }
+.btn-primary {
+  color: #fff;
+  background-color: #ff85a2;
+  border-color: #ff85a2;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #74baa6;
+  background-color: #ff85a2;
+  border-color: #ff85a2;
+}
 .btn-outline {
   color: white;
   font-size: 20px;
