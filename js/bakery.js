@@ -71,7 +71,7 @@ bakeryApp.service('Cupcakes', function (){
         {
             name: 'You Choose',
             description: 'You pick the cake and frosting..',
-            imageUrl: 'img/cupcakes/pumpkin-spice.jpg'
+            imageUrl: 'img/cupcakes/pumpkin-spice.JPG'
         }
     ];
 
