@@ -35,3 +35,58 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+var bakeryApp = angular.module('bakeryApp', []);
+
+bakeryApp.service('Cupcakes', function (){
+    var cupcakes = this;
+    cupcakes.currentCupcake = null;
+
+    cupcakes.cupcakes = [
+        {
+            name: 'Chocolate Chocolate',
+            description: 'Chocolate cupcake with dark chocolate buttercream frosting.',
+            imageUrl: 'img/cupcakes/pumpkin-spice.JPG'
+        },
+        {
+            name: 'Chocolate Peanut Butter',
+            description: 'Chocolate cupcake with peanut butter buttercream frosting.',
+            imageUrl: 'img/cupcakes/pumpkin-spice.JPG'
+        },
+        {
+            name: 'The Vanilla',
+            description: 'Classic vanilla cupcake with vanilla buttercream frosting.',
+            imageUrl: 'img/cupcakes/pumpkin-spice.JPG'
+        },
+        {
+            name: 'Red Velvet',
+            description: 'Red Velvet cupcake with cream cheese frosting. Great for Valentines day!',
+            imageUrl: 'img/cupcakes/pumpkin-spice.JPG'
+        },
+        {
+            name: 'Pumpkin Spice',
+            description: 'Pumpkin Spice cupcake with frosting.',
+            imageUrl: 'img/cupcakes/pumpkin-spice.JPG'
+        },
+        {
+            name: 'You Choose',
+            description: 'You pick the cake and frosting..',
+            imageUrl: 'img/cupcakes/pumpkin-spice.jpg'
+        }
+    ];
+
+});
+
+bakeryApp.controller('CupcakePortfolioController', function(Cupcakes){
+    var portfolio = this;
+    portfolio.cupcakes = Cupcakes;
+
+    portfolio.setCurrentCupcake = function(cupcake) {
+        portfolio.cupcakes.currentCupcake = cupcake;
+    };
+});
+
+bakeryApp.controller('CupcakeDetailController', function(Cupcakes) {
+    var detail = this;
+    detail.cupcakes = Cupcakes;
+});
