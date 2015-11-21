@@ -44,33 +44,33 @@ bakeryApp.service('Cupcakes', function (){
 
     cupcakes.cupcakes = [
         {
-            name: 'Chocolate Chocolate',
-            description: 'Chocolate cupcake with dark chocolate buttercream frosting.',
+            name: 'Classic Chocolate',
+            description: 'Rich chocolate cupcake with a silky chocolate buttercream frosting.',
             imageUrl: 'img/cupcakes/pumpkin-spice.JPG'
         },
         {
             name: 'Chocolate Peanut Butter',
-            description: 'Chocolate cupcake with peanut butter buttercream frosting.',
+            description: 'Divine chocolate cupcake with a smooth peanut butter buttercream.',
             imageUrl: 'img/cupcakes/pumpkin-spice.JPG'
         },
         {
             name: 'The Vanilla',
-            description: 'Classic vanilla cupcake with vanilla buttercream frosting.',
+            description: 'Delicious vanilla cupcake with satiny vanilla buttercream.',
             imageUrl: 'img/cupcakes/pumpkin-spice.JPG'
         },
         {
             name: 'Red Velvet',
-            description: 'Red Velvet cupcake with cream cheese frosting. Great for Valentines day!',
+            description: 'Delectable red velvet cupcake with a smooth cream cheese frosting. Great for Valentines day!',
             imageUrl: 'img/cupcakes/pumpkin-spice.JPG'
         },
         {
-            name: 'Pumpkin Spice',
-            description: 'Pumpkin Spice cupcake with frosting.',
+            name: 'Fall Pumpkin Spice',
+            description: 'Scrumptious pumpkin cupcake with cinnamon cream cheese frosting.',
             imageUrl: 'img/cupcakes/pumpkin-spice.JPG'
         },
         {
             name: 'You Choose',
-            description: 'You pick the cake and frosting..',
+            description: 'Your choice of cupcake and buttercream.',
             imageUrl: 'img/cupcakes/pumpkin-spice.JPG'
         }
     ];
